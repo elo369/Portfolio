@@ -50,7 +50,7 @@ const TechStack = () => {
     },
   ];
   return (
-    <div id="tech" className="min-h-screen sm:min-h-[70vh] relative py-30 sm:top:10 ">
+    <div id="tech" className="min-h-screen sm:min-h-[70vh] relative py-20 sm:top:10 ">
       <div>
         <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-4xl md:text-6xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight bottom-5 sm:text-5xl md:top-1 bg-black">
           Tech Stack

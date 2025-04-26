@@ -15,7 +15,7 @@ export default function Contract() {
   return (
     <div
       id="contact"
-      className="w-full md:mb-24 mx-auto h-[90vh]  flex flex-col md:flex-row items-center justify-center p-6 md:p-8 bg-black rounded-none md:rounded-2xl shadow-lg top-40 relative"
+      className="w-full md:mb-10 mx-auto h-[90vh]  flex flex-col md:flex-row items-center justify-center p-6 md:p-8 bg-black rounded-none md:rounded-2xl shadow-lg top-15 relative"
     >
       {/* Contact Info Section */}
       <section className="flex flex-col items-center md:w-1/2 text-center space-y-6 md:space-y-8">

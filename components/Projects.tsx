@@ -88,7 +88,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="project" className="min-h-screen px-2  bg-black top-35 sm:top-0 md:top-40 relative">
+    <div id="project" className="min-h-screen px-2  bg-black top-25 sm:top-0 md:top-40 relative">
       <div>
         <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-4xl md:text-6xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight bottom-5 sm:text-5xl md:top-1 bg-black">
           Projects
