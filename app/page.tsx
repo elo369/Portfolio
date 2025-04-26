@@ -3,7 +3,6 @@ import FloatNavbar from "@/components/FloatNavbar";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import TechStack from "@/components/TechStack";
-import Image from "next/image";
 
 export default function Home() {
   return (
