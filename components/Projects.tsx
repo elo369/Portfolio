@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import { motion } from "framer-motion";
 interface Lang {
   imgLang: string;
   language: string;
@@ -16,8 +17,7 @@ interface Pro {
 }
 
 const Projects = () => {
-
-  const projects:Pro[] = [
+  const projects: Pro[] = [
     {
       image: "/chat.jpg",
       title: "Chat Application",
@@ -88,19 +88,40 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="project" className="min-h-screen px-2  bg-black top-25 sm:top-0 md:top-40 relative">
+    <div
+      id="project"
+      className="min-h-screen px-2  bg-black top-25 sm:top-0 md:top-40 relative"
+    >
       <div>
-        <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-4xl md:text-6xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight bottom-5 sm:text-5xl md:top-1 bg-black">
+        <motion.h2
+          initial={{ opacity: 0, filter: "blur(10px)", y: 20 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          transition={{
+            delay: 0.5,
+            ease: "easeInOut",
+            duration: 0.3,
+          }}
+          viewport={{ once: true }}
+          className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-4xl md:text-6xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight bottom-5 sm:text-5xl md:top-1 bg-black"
+        >
           Projects
-        </h2>
+        </motion.h2>
       </div>
       <div className=" justify-center px-2 items-center  flex flex-wrap gap-2">
         {/* <div className='flex flex-col flex-wrap bg-amber-300 w-[55px] h-10 gap-2 '> */}
         <div className="gap-8 flex flex-wrap flex-col  sm:flex-row">
           {projects.map((project, index) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, filter: "blur(10px)", y: 20 }}
+              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              transition={{
+                delay: 0.6,
+                ease: "easeInOut",
+                duration: 0.3,
+              }}
+              viewport={{ once: true }}
               key={index}
-              className="bg-[#292929]   w-80 h-70 border border-gray-500 rounded-xl hover:shadow-amber-200 hover:shadow-lg "
+              className="bg-[rgb(49,49,49)]   w-80 h-70 border border-white rounded-xl hover:shadow-amber-200 hover:shadow-lg "
             >
               <div className="w-80">
                 <Image
@@ -147,20 +168,26 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         {/* </div> */}
       </div>
       <div className=" flex justify-center items-center py-10">
-      <button className="shadow-[inset_0_0_0_2px_#616467] text-gray-300 px-8 py-3 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200 ">
-        <Link
-        href={"https://github.com/elo369"}
-        target="_blank"
-        >
-          All Projects
-        </Link>
-      </button>
+        <motion.button 
+        initial={{ opacity: 0, filter: "blur(10px)", y: 30 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          transition={{
+            delay: 0.5,
+            ease: "easeInOut",
+            duration: 0.3,
+          }}
+          viewport={{ once: true }}
+        className="shadow-[inset_0_0_0_2px_#616467] text-gray-300 px-8 py-3 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200 ">
+          <Link href={"https://github.com/elo369"} target="_blank">
+            All Projects
+          </Link>
+        </motion.button>
       </div>
     </div>
   );
