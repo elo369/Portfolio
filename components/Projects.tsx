@@ -71,10 +71,10 @@ const Projects = () => {
       ],
     },
     {
-      image: "/vrs.jpg",
-      title: "Chat Application",
-      link: "https://virtual-r-xi-six.vercel.app/",
-      github: "https://github.com/elo369/virtualR",
+      image: "/bold.jpg",
+      title: "Bold Web",
+      link: "https://bold-web-tau.vercel.app/",
+      github: "https://github.com/elo369/BoldWeb",
       lang: [
         {
           imgLang: "/atom.png",
@@ -83,6 +83,10 @@ const Projects = () => {
         {
           imgLang: "/icons8-tailwind-css-192.png",
           language: "Tailwind",
+        },
+        {
+          imgLang: "/nextjs.svg",
+          language: "Next.js",
         },
       ],
     },
