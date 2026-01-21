@@ -19,10 +19,10 @@ interface Pro {
 const Projects = () => {
   const projects: Pro[] = [
     {
-      image: "/chat.jpg",
-      title: "Chat Application",
-      link: "Live demo is currently facing issues",
-      github: "https://github.com/elo369/ChatApp",
+      image: "/travel.jpeg",
+      title: "Travel Website",
+      link: "https://travel-web-jet.vercel.app",
+      github: "https://github.com/elo369/Travel-Web",
       lang: [
         {
           imgLang: "/atom.png",
@@ -32,24 +32,12 @@ const Projects = () => {
           imgLang: "/icons8-tailwind-css-192.png",
           language: "Tailwind",
         },
-        {
-          imgLang: "/icons8-express-js-100.png",
-          language: "Express",
-        },
-        {
-          imgLang: "/developer.png",
-          language: "Node.js",
-        },
-        {
-          imgLang: "/Socket.io.png",
-          language: "Socket.io",
-        },
       ],
     },
     {
       image: "/musics.jpg",
       title: "Music Academy",
-      link: "https://music-studio-84le.vercel.app/",
+      link: "https://music-studio-84le.vercel.app",
       github: "https://github.com/elo369/musicStudio",
       lang: [
         {
@@ -73,7 +61,7 @@ const Projects = () => {
     {
       image: "/bold.jpg",
       title: "Bold Web",
-      link: "https://bold-web-tau.vercel.app/",
+      link: "https://bold-web-tau.vercel.app",
       github: "https://github.com/elo369/BoldWeb",
       lang: [
         {

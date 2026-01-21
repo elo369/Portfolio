@@ -45,7 +45,7 @@ const HeroSection = () => {
         duration:0.3
       }}
         className="max-w-xl mx-auto text-sm md:text-lg dark:text-neutral-400 text-center bg-gradient-to-b from-neutral-500 to-white bg-clip-text text-transparent left-2 relative top-3 sm:top-6 md:px-3 ">
-          I&apos;m a 21-year-old BCom student with a strong passion for full
+          I&apos;m a 22 year-old BCom student with a strong passion for full
           stack development. Skilled in the MERN stack and Next.js, I enjoy
           building creative, user-friendly, and efficient web applications.
           I&apos;ve dedicated myself to mastering full-stack development and
