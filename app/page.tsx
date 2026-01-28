@@ -1,5 +1,6 @@
 "use client"
 import Contract from "@/components/Contact";
+import FigmaDesign from "@/components/FigmaDesign";
 import FloatNavbar from "@/components/FloatNavbar";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
@@ -28,6 +29,7 @@ export default function Home() {
       <HeroSection/>
       <TechStack/>
       <Projects/>
+      <FigmaDesign/>
       <div className="relative z-50 ">
         <FloatNavbar />
       </div>
